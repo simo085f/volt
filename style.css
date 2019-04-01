@@ -345,6 +345,19 @@ video {
   margin: 0 auto;
 }
 
+/* MAP SEKTION */
+
+.map_img img {
+  width: 100%;
+}
+
+#map {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+
 @media screen and (min-width: 627px) {
   .fa-navicon {
     padding-right: 20px;
@@ -379,6 +392,10 @@ video {
   }
 
   #energi_container {
+    width: 85%;
+  }
+
+  #map {
     width: 85%;
   }
 }
@@ -484,27 +501,47 @@ video {
   }
 
   #buy {
-    width: 70%;
+    width: 80%;
   }
   .imgknap {
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
   }
 
   #paying_for {
-    width: 70%;
+    width: 80%;
   }
 
   #process > h1 {
-    width: 70%;
+    width: 80%;
   }
 
   #process > p {
-    width: 70%;
+    width: 80%;
   }
 
   #energi_container {
-    width: 70%;
+    width: 80%;
+  }
+
+  #map {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .map_img {
+    padding-top: 50px;
+  }
+
+  .ikoner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4vw;
+    margin-bottom: 10vw;
   }
 }
 
@@ -570,19 +607,22 @@ video {
     grid-gap: 30px;
   }
 
-  .ikoner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 4vw;
-    margin-bottom: 10vw;
+  .map_img {
+    padding-top: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .topmenu {
     width: 75%;
+  }
+
+  .energi_ikon {
+    transform: scale(1);
+  }
+
+  #energi_container {
+    grid-gap: 130px;
   }
 }
 
@@ -597,9 +637,5 @@ video {
 
   #energi_container {
     grid-gap: 170px;
-  }
-
-  .energi_ikon {
-    transform: scale(1);
   }
 }
