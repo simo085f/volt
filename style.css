@@ -149,6 +149,12 @@ a {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
 }
+/* VIDEO SPLASH SEKTION */
+
+video {
+  width: 100%;
+  margin-top: 40px;
+}
 
 /*** første sektion med købknap*/
 #buy {
@@ -287,4 +293,54 @@ a {
 }
 .paying_tekst > p {
   margin-bottom: 5vw;
+}
+
+/* PROCESS SEKTIONEN */
+#process > h1 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10vw;
+}
+
+#process > p {
+  width: 90%;
+  margin: 0 auto;
+}
+.ikoner {
+  display: grid;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 4vw;
+  margin-bottom: 10vw;
+}
+.ikon {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+}
+
+/* GRØN ENERGI SEKTION */
+
+#energi_container {
+  background-color: #a6cc45;
+  color: white;
+  text-align: center;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.energi_ikon {
+  transform: scale(0.8);
+}
+
+#energi {
+  background-color: #a6cc45;
+}
+
+.e_lang_tekst {
+  width: 100%;
+  margin: 0 auto;
 }
