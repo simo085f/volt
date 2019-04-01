@@ -98,7 +98,8 @@ a {
   cursor: pointer;
 }
 
-* video SPLASH SEKTION */ video {
+/* SPLASH SEKTION */
+video {
   width: 100%;
   margin-top: 40px;
 }
@@ -358,6 +359,43 @@ video {
   padding-bottom: 10vw;
 }
 
+#getvolt_baggrund {
+  width: 100%;
+  background-color: #a6cc45;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+
+.getvolt {
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.getvolt > h1 {
+  margin-block-end: 0em;
+}
+
+.getvolt > p {
+  margin-block-start: 0em;
+}
+
+.getvolt_knap {
+  width: 40%;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.getvolt_knap:hover {
+  background-color: white;
+  color: #a6cc45;
+}
+
 @media screen and (min-width: 627px) {
   .fa-navicon {
     padding-right: 20px;
@@ -395,7 +433,7 @@ video {
     width: 85%;
   }
 
-  #map {
+  .getvolt {
     width: 85%;
   }
 }
@@ -543,6 +581,10 @@ video {
     margin-top: 4vw;
     margin-bottom: 10vw;
   }
+
+  .getvolt {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -609,6 +651,10 @@ video {
 
   .map_img {
     padding-top: 0;
+  }
+
+  .getvolt_knap {
+    width: 20%;
   }
 }
 
