@@ -149,3 +149,65 @@ a {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
 }
+
+/*** første sektion med købknap*/
+#buy {
+  padding-top: 10vw;
+  width: 90%;
+  margin: 0 auto;
+}
+.voltikoner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+.voltikon1 {
+  width: 34px;
+  height: 45px;
+  margin-bottom: -10px;
+}
+
+.voltikon2 {
+  width: 52px;
+  height: 45px;
+  margin-bottom: -10px;
+}
+
+.voltikon3 {
+  width: 45px;
+  height: 45px;
+  margin-bottom: -10px;
+}
+
+.voltikon4 {
+  width: 33px;
+  height: 45px;
+  margin-bottom: -10px;
+}
+
+.chargerimg {
+  margin-top: 10px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.bookn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: white;
+  margin-top: 20px;
+  background-color: #a6cc45;
+  cursor: pointer;
+}
+
+.imgknap > p {
+  text-align: center;
+  margin-top: 2px;
+  font-size: 0.8em;
+}
