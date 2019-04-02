@@ -323,9 +323,10 @@ video {
 .ikon2,
 .ikon4,
 .ikon5,
-.ikon6 {
+.ikon6,
+.ikon7 {
   width: 100%;
-  height: 200px;
+  height: 130px;
   margin-bottom: 20px;
 }
 
@@ -364,6 +365,13 @@ video {
   background-size: 100% 100%;
 }
 
+.ikon7 {
+  background-image: url(Volt_Charger2.svg);
+  background-size: 100% 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transform: scale(1.2);
+}
 /* GRØN ENERGI SEKTION */
 
 #energi_container {
@@ -680,11 +688,31 @@ footer {
 
   .ikoner {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 11% 11% 7% 11% 11% 11% 7% 11%;
     width: 80%;
     margin: 0 auto;
+    grid-gap: 20px;
     margin-top: 4vw;
     margin-bottom: 10vw;
+  }
+
+  .ikon1,
+  .ikon2,
+  .ikon4,
+  .ikon5,
+  .ikon6,
+  .ikon7 {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0px;
+  }
+
+  .ikon3 {
+    padding-top: 20px;
+  }
+
+  .ikon7 {
+    margin-top: 0px;
   }
 
   .getvolt {
@@ -755,6 +783,17 @@ footer {
 
   .imgknap {
     width: 100%;
+  }
+
+  .ikon1,
+  .ikon2,
+  .ikon4,
+  .ikon5,
+  .ikon6,
+  .ikon7 {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0px;
   }
 
   #energi_container {
