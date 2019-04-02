@@ -314,23 +314,63 @@ video {
 }
 .ikoner {
   display: grid;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
+  grid-gap: 30px;
   margin-top: 4vw;
   margin-bottom: 10vw;
 }
-.ikon1,
+
+.delivery {
+  display: grid;
+  grid-template-columns: 35% 1fr 35%;
+}
+
+.return {
+  display: grid;
+  grid-template-columns: 40% 1fr 40%;
+}
+.svg1,
 .ikon2,
 .ikon4,
 .ikon5,
 .ikon6,
-.ikon7 {
+.svg7 {
   width: 100%;
   height: 130px;
-  margin-bottom: 20px;
 }
 
-.ikon1 {
+.ikon1 > p {
+  text-align: center;
+  margin-block-start: 0em;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.ikon7 > p {
+  text-align: center;
+  margin-block-start: 0em;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.delivery > p {
+  grid-column: 1/5;
+  text-align: center;
+  margin-block-start: 1em;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.return > p {
+  grid-column: 1/5;
+  text-align: center;
+  margin-block-start: 1em;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.svg1 {
   background-image: url(Websitepay1.svg);
   background-size: 100% 100%;
 }
@@ -344,8 +384,8 @@ video {
   width: 100%;
   height: 20px;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+
   font-size: 1.6em;
   font-family: "Open Sans", sans-serif;
 }
@@ -365,13 +405,14 @@ video {
   background-size: 100% 100%;
 }
 
-.ikon7 {
+.svg7 {
   background-image: url(Volt_Charger2.svg);
   background-size: 100% 100%;
   margin-bottom: 20px;
   margin-top: 20px;
   transform: scale(1.2);
 }
+
 /* GRØN ENERGI SEKTION */
 
 #energi_container {
@@ -688,7 +729,8 @@ footer {
 
   .ikoner {
     display: grid;
-    grid-template-columns: 11% 11% 7% 11% 11% 11% 7% 11%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
     width: 80%;
     margin: 0 auto;
     grid-gap: 20px;
@@ -696,23 +738,33 @@ footer {
     margin-bottom: 10vw;
   }
 
-  .ikon1,
+  .delivery {
+    display: block;
+  }
+
+  .return {
+    display: block;
+  }
+
+  .svg1,
+  .svg7 {
+    margin-top: 80px;
+  }
+
+  .svg1,
   .ikon2,
   .ikon4,
   .ikon5,
   .ikon6,
-  .ikon7 {
+  .svg7 {
     width: 100%;
     height: 100px;
     margin-bottom: 0px;
   }
 
   .ikon3 {
-    padding-top: 20px;
-  }
-
-  .ikon7 {
-    margin-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 
   .getvolt {
@@ -785,15 +837,8 @@ footer {
     width: 100%;
   }
 
-  .ikon1,
-  .ikon2,
-  .ikon4,
-  .ikon5,
-  .ikon6,
-  .ikon7 {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 0px;
+  .ikoner {
+    width: 85%;
   }
 
   #energi_container {
@@ -848,7 +893,7 @@ footer {
   }
 
   .text_container {
-    top: 29vw;
+    top: 20vw;
   }
 
   #energi_container {
