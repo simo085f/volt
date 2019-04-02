@@ -499,6 +499,66 @@ video {
   color: #a6cc45;
 }
 
+/**** SOCIAL MEDIA ***/
+.connect_baggrund {
+  background-color: #343436;
+}
+#connect {
+  width: 90%;
+  margin: 0 auto;
+  height: 60px;
+  padding-top: 5px;
+  display: grid;
+  grid-template-columns: 35% 1fr;
+}
+
+.socialmedia {
+  margin-top: 3px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
 /**** FOOTER **/
 
 footer {
@@ -510,7 +570,7 @@ footer {
 #footer {
   width: 90%;
   margin: 0 auto;
-  padding-top: 10vw;
+  padding-top: 5vw;
   padding-bottom: 10vw;
 }
 
@@ -585,6 +645,14 @@ footer {
 
   .getvolt > h1 {
     font-size: 1.8em;
+  }
+
+  #connect {
+    width: 60%;
+    margin-right: 0 auto;
+    margin: 0;
+    margin-left: 8%;
+    grid-template-columns: 30% 1fr;
   }
 
   #footer {
@@ -771,6 +839,13 @@ footer {
     width: 80%;
   }
 
+  #connect {
+    width: 45%;
+
+    margin-left: 10%;
+    grid-template-columns: 30% 1fr;
+  }
+
   #footer {
     width: 80%;
     display: grid;
@@ -866,6 +941,9 @@ footer {
     grid-gap: 20px;
   }
 
+  #connect {
+    width: 37%;
+  }
   #footer {
     width: 80%;
 
@@ -900,6 +978,12 @@ footer {
     grid-gap: 170px;
   }
 
+  #connect {
+    width: 25%;
+
+    margin-left: 10%;
+    grid-template-columns: 30% 1fr;
+  }
   #footer {
     grid-template-columns: 83% 1fr;
   }
