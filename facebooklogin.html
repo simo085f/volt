@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="login_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>VOLT: Log-in</title>
+  </head>
+  <body>
+    <header>
+      <span onclick="openNav()"
+        ><i class="fa fa-navicon" style="font-size:25px; float: right;"></i
+      ></span>
+      <a class="navlogo" href="https://getvolt.dk/" title="Volt" id="navbar">
+        <svg height="48 " width="72">
+          <image
+            xlink:href="https://getvolt.dk/themes/volt/img/Volt-logo-nopowertogo.svg"
+            src="https://getvolt.dk/themes/volt/img/Volt-logo-nopowertogo.png"
+            height="48"
+            width="72"
+          ></image>
+        </svg>
+      </a>
+      <div id="sideMenu" class="sideNav">
+        <a
+          href="javascript:void(0)"
+          class="closebtn"
+          style="font-size: 30px; float: right; width: 20px; border: none; margin-right: 3vw;margin-top: -8px;"
+          onclick="closeMenu()"
+          >&times;</a
+        >
+        <div class="punkter">
+          <a href="https://getvolt.dk/festivals/">Festivals</a>
+          <a href="https://getvolt.dk/volunteer/">Volunteer</a>
+          <a href="https://getvolt.dk/shop/">Shop</a>
+          <a href="https://getvolt.dk/help/">Help</a>
+          <a href="https://getvolt.dk/blog/">Blog</a>
+          <a
+            href="https://"
+            class="login"
+            style=" color: #a6cc45; border-bottom: 1px solid #a6cc45;"
+            >Login</a
+          >
+        </div>
+      </div>
+      <div class="topmenu">
+        <ul class="menu menupunkter">
+          <a
+            class="navlogo1"
+            href="https://getvolt.dk/"
+            title="Volt"
+            id="navbar1"
+            style="float: left;"
+          >
+            <svg height="48 " width="72">
+              <image
+                xlink:href="https://getvolt.dk/themes/volt/img/Volt-logo-nopowertogo.svg"
+                src="https://getvolt.dk/themes/volt/img/Volt-logo-nopowertogo.png"
+                height="48"
+                width="72"
+              ></image>
+            </svg>
+          </a>
+          <li><a href="https://getvolt.dk/festivals/">Festivals</a></li>
+          <li><a href="https://getvolt.dk/volunteer/">Volunteer</a></li>
+          <li><a href="https://getvolt.dk/shop/">Shop</a></li>
+          <li><a href="https://getvolt.dk/help/">Help</a></li>
+          <li><a href="https://getvolt.dk/blog/">Blog</a></li>
+        </ul>
+        <div id="sign">
+          <a class="sprog">
+            <img
+              src="https://getvolt.dk/img/l/3.jpg"
+              alt="DA"
+              width="16"
+              height="11"
+          /></a>
+          <div class="logIn">Log in</div>
+          <button class="signup">SIGN UP</button>
+        </div>
+      </div>
+    </header>
+    <div class="page-wrapper">
+      <div class="cartcontainer">
+        <h1>
+          Summery
+          <span class="price" style="color:black"
+            ><i class="fa fa-shopping-cart"></i> <b>2</b></span
+          >
+        </h1>
+
+        <div class="cart">
+          <div class="grid1">
+            <h2>Swapping Service - RF19</h2>
+
+            <div class="numbersandtext">
+              <select class="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+
+              <p>Swap your Volt Charger every day for a fully charged one.</p>
+            </div>
+          </div>
+          <div class="grid2">
+            <img src="roskilde.png" />
+            <p>179 DKK</p>
+          </div>
+        </div>
+
+        <hr />
+        <div class="cart">
+          <div class="grid1">
+            <h2>Volt Charger Deposit</h2>
+
+            <div class="numbersandtext">
+              <select class="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <p>
+                At the end of the festival, get a free cable to use the Volt
+                charger at home, or return it and get the deposit refunded.
+              </p>
+            </div>
+          </div>
+          <div class="grid2">
+            <img src="download-1.png" />
+            <p>200 DKK</p>
+          </div>
+        </div>
+        <label>
+          <input type="checkbox" name="bringown" />
+          I bring my own VOLT Charger
+        </label>
+
+        <p>Delevery Option</p>
+        <select class="levering">
+          <option value="Shipped to home">Shipped to home, 50 DKK</option>
+          <option value="Pick up at festival or at VOLT CPH"
+            >Pick up at festival or at VOLT CPH</option
+          >
+        </select>
+        <hr />
+        <div class="totalprice">
+          <p>
+            Total 429 DKK
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Login to Volt</h2>
+        <form>
+          <!-- facebook button: so the user can login with some account -->
+          <button class="fb_login">Login with facebook</button>
+          <!-- this is the divider between the facbook login button and the manual login form -->
+          <hr class="hr-text" data-content="OR" />
+          <!-- input label for E-mail in the login form-->
+          <label for="email"></label>
+          <input type="text" placeholder="E-mail" name="email" />
+          <!-- input label for the users Password -->
+          <label for="psw"></label>
+          <input type="password" placeholder="Password" name="psw" />
+          <!-- the login button, for submitting user password -->
+          <button class="submit">Login</button>
+          <!-- checkbox, that lets the user password be rememberd -->
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+
+          <div class="psw-help">
+            <!-- password helper, if the user have forgotten its password, right now its set up to an anonymus href because i don't know how what to linke it up to -->
+            <span class="psw">I forgot my <a href="#">password?</a></span>
+          </div>
+          <!-- Registration as a new user, if they dont have an account allready, this should linke ( href) up to the page where you can sign up as e new user -->
+          <div class="reg">
+            Don't have a Volt account <a href="formular.html">Sign up here!</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.querySelector("#sideMenu").style.width = "100%";
+      }
+      function closeMenu() {
+        document.querySelector("#sideMenu").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
