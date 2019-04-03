@@ -199,35 +199,22 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-}
-
-input[type="submit"] {
-  width: 100%;
-  background-color: #4caf50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
+  margin-bottom: 2vw;
 }
 
 .formcontent {
   background-color: #f2f2f2;
-  padding: 2vw 2vw 3vw 2vw;
+  padding: 1vw 2vw 3vw 2vw;
   border: 1px solid lightgrey;
   border-radius: 3px;
 }
 
 .cartcontainer {
   background-color: #f2f2f2;
-  padding: 5px 20px 5px 20px;
+  padding: 1vw 2vw 3vw 2vw;
   border: 1px solid lightgrey;
   border-radius: 3px;
+  max-height: 709px;
 }
 
 p {
@@ -275,7 +262,7 @@ h2 {
 
 .grid2 img {
   width: 120%;
-  margin-left: -1vw;
+  margin-left: -2vw;
 }
 
 .grid2 {
@@ -303,12 +290,164 @@ h2 {
   width: 100%;
 }
 
+/* hey her kommer payment */
+
+#payment {
+  background-color: #f2f2f2;
+}
+#payment img {
+  width: 40%;
+  text-align: center;
+}
+
+.symboler {
+  display: grid;
+  grid-column-gap: 1vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 5vw;
+}
+.symboler img {
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* her er brødstien */
+
+.timeline {
+  width: 100%;
+  height: 100px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline .events {
+  position: relative;
+  background-color: #606060;
+  height: 3px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 5em 0;
+}
+
+.timeline .events ol {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.timeline .events ul {
+  list-style: none;
+}
+
+.timeline .events ul li {
+  display: inline-block;
+  width: 24.65%;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline .events ul li a {
+  font-style: italic;
+  font-size: 1.25em;
+  color: #606060;
+  text-decoration: none;
+  position: relative;
+  top: -32px;
+}
+
+.timeline .events ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  right: auto;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid #606060;
+  background-color: #fff;
+  transition: 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.timeline .events ul li a:hover::after {
+  background-color: #a6cc45;
+  border-color: #606060;
+}
+
+.timeline .events ul li a.selected:after {
+  background-color: #a6cc45;
+  border-color: #606060;
+}
+
+.events-content {
+  width: 100%;
+  height: 100px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+}
+
+.events-content li {
+  display: none;
+  list-style: none;
+}
+
+.events-content li.selected {
+  display: initial;
+}
+
+.events-content li h2 {
+  font-weight: 500;
+  color: #919191;
+  font-size: 2.5em;
+}
+
+a#formularSelected::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  right: auto;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid #606060;
+  background-color: #606060;
+  transition: 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/*  KNAP */
+
+button.next {
+  background-color: #a6cc45;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  margin-top: 3vw;
+}
+button.next:hover {
+  opacity: 0.8;
+}
+
 @media screen and (max-width: 768px) {
   .page-wrapper {
     display: grid;
     grid-gap: 3vw;
     grid-template-columns: 1fr;
-    padding: 5vw;
     padding-top: 15vw;
   }
 }
