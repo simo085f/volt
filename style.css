@@ -603,6 +603,42 @@ footer {
 .information > h2 {
   margin-block-start: 0em;
 }
+
+/*   animation */
+
+#animation {
+  background-color: #fff;
+  padding-top: 6vw;
+  padding-bottom: 10vw;
+}
+
+#styletile_container {
+  background-image: url("splash-anima-01.svg");
+  background-size: 162%;
+  background-color: #fff;
+  position: absolute;
+  background-size: cover;
+  border: 2px solid #b9b9b9;
+  left: 5%;
+  width: 88.5vw;
+  height: 18.75vw;
+}
+
+.styletile_move {
+  animation-name: styletile_move_kf;
+  animation-duration: 2s;
+  animation-timing-function: steps(3);
+  animation-iteration-count: infinite;
+}
+
+@keyframes styletile_move_kf {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -300% 0;
+  }
+}
 @media screen and (min-width: 627px) {
   .fa-navicon {
     padding-right: 20px;
