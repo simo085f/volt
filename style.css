@@ -1022,6 +1022,11 @@ footer {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .text_container {
+    top: 28vw;
+  }
+}
 @media screen and (min-width: 1536px) {
   .topmenu {
     width: 70%;
