@@ -1,0 +1,318 @@
+@font-face {
+  font-family: Regular;
+  src: url(4000-Regular.otf);
+  font-family: Bold;
+  src: url(4000-Bold.otf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Regular;
+}
+/* body {
+  position: absolute;
+    right: 24vw;
+    width: 50vw;
+    height: 65vh;
+    padding-top: 6vh;  border: 1px solid gray;
+    
+  } */
+
+#thx-container {
+  width: 90%;
+  margin: 0 auto;
+
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+
+.order-img img {
+  width: 100%;
+}
+
+.confirm-order {
+  text-align: center;
+}
+
+.confirm-order > p {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sharing {
+  width: 100%;
+}
+
+.sharing h1 {
+  text-align: center;
+}
+
+.sharing p {
+  width: 90%;
+
+  margin: 0 auto;
+  border-style: none;
+}
+
+span {
+  font-family: "4000 Bold";
+  font-weight: 700;
+}
+.share-link {
+  width: 95%;
+  margin: 0 auto;
+}
+.share-link p {
+  text-align: center;
+}
+
+.share-link p a {
+  text-decoration: underline;
+  color: black;
+}
+
+.share-btn {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  width: 30%;
+}
+
+#fb-btn {
+  background-color: #a6cc45;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  width: 90%;
+  border: none;
+  cursor: pointer;
+}
+
+#fb-btn:hover {
+  opacity: 0.8;
+}
+
+#tw-btn {
+  background-color: #a6cc45;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  width: 90%;
+  height: 30px;
+
+  border: none;
+  cursor: pointer;
+}
+
+#tw-btn:hover {
+  opacity: 0.8;
+}
+
+.sharing_png {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 5vw;
+}
+
+.sharing_png img {
+  width: 100%;
+}
+
+.png1 > p {
+  text-align: center;
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: white;
+}
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.8em;
+}
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+/* NAVIGATION MOBIL */
+.topmenu,
+.navbar1,
+.navlogo1 {
+  display: none;
+}
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  background-color: black;
+  height: 40px;
+  overflow: hidden;
+}
+.fa-navicon {
+  position: relative;
+  padding-right: 10px;
+  z-index: 13;
+  margin-left: 4vw;
+  margin-top: 6px;
+  color: white;
+}
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 13;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.sideNav a {
+  text-decoration: none;
+  padding: 20px 8px 5px 32px;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+.navlogo {
+  margin-left: 10px;
+  cursor: pointer;
+  z-index: 15;
+  position: absolute;
+}
+svg {
+  margin-top: -3px;
+}
+.fas {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 100;
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}
+@media screen and (min-width: 627px) {
+  .fa-navicon {
+    padding-right: 20px;
+    margin-top: 1vw;
+  }
+  .navlogo {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /** SKJUL MOBIL NAVIGATION */
+  .navlogo,
+  #sideMenu,
+  .sideNav,
+  span,
+  .navbar {
+    display: none;
+  }
+  /* VIS TOP NAVIGATION */
+  .navlogo1,
+  .navbar1,
+  .topmenu {
+    display: block;
+  }
+  header {
+    position: fixed;
+    z-index: 10;
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 50px;
+  }
+  #navbar1 {
+    padding: 8px 5px 10px 0px;
+  }
+  li > a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  .menupunkter > li {
+    float: left;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .menu > li {
+    position: relative;
+    display: block;
+    z-index: 11;
+    padding: 11px;
+    margin-top: 2.5px;
+  }
+  svg {
+    margin-top: -8px;
+  }
+
+  #sign {
+    display: flex;
+    position: relative;
+    color: white;
+    float: right;
+  }
+  .sprog {
+    margin-top: 5px;
+    padding: 11px;
+  }
+  #sign > div {
+    padding: 11px;
+    font-size: 15px;
+    margin-top: 2.5px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .signup {
+    margin-top: 5px;
+    margin-left: 11px;
+    border-radius: 8px;
+    width: 80px;
+    border: none;
+    background-color: #a6cc45;
+    color: white;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+  }
+  .topmenu {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sharing_png {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    grid-gap: 30px;
+  }
+}
