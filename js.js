@@ -3,6 +3,8 @@
 window.addEventListener("load", init);
 
 function init() {
+  alert("this is a school project made at KEA");
+
   animateText();
 }
 let t1Listener = false;
